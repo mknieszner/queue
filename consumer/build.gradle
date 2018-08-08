@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.mknieszner.playground'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.springframework', name: 'spring-core', version: '5.0.8.RELEASE'
+    compile group: 'org.springframework', name: 'spring-context', version: '5.0.8.RELEASE'
+    compile group: 'org.springframework', name: 'spring-jms', version: '5.0.8.RELEASE'
+    compile group: 'org.apache.activemq', name: 'activemq-spring', version: '5.15.4'
+    compile group: 'javax.jms', name: 'javax.jms-api', version: '2.0.1'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25'
+}
